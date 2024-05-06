@@ -27,6 +27,7 @@ public final class PeripheralCell: UITableViewCell {
 	private func setup() {
 		addSubviews()
 		makeConstraints()
+		contentView.backgroundColor = .clear
 		nameLabel.font = .preferredFont(forTextStyle: .caption1)
 		stateLabel.font = .preferredFont(forTextStyle: .caption2)
 		rssiLabel.font = .preferredFont(forTextStyle: .caption2)
@@ -60,9 +61,9 @@ public final class PeripheralCell: UITableViewCell {
 
 extension PeripheralCell {
 	struct Model {
-		let name: String?
-		let state: String
-		let rssi: String
+		var name: String?
+		var state: String
+		var rssi: String
 	}
 	
 	func configure(model: Model) {
