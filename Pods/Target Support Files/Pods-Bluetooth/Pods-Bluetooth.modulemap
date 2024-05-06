@@ -1,0 +1,6 @@
+framework module Pods_Bluetooth {
+  umbrella header "Pods-Bluetooth-umbrella.h"
+
+  export *
+  module * { export * }
+}
